@@ -11,7 +11,7 @@ st.set_page_config(page_title="Diabetes App", page_icon="🩺", layout = "wide")
 
 
 # Load the saved model
-model = joblib.load(r'C:\Users\user\Documents\DATA ANALYTICS\MERISKILL\Project 2 - Diabetes Data\Logistic Regression.pkl')
+model = joblib.load('Logistic Regression.pkl')
 
 # Load Dataset
 data = pd.read_csv(r"C:\Users\user\Documents\DATA ANALYTICS\MERISKILL\Project 2 - Diabetes Data\diabetes.csv")
@@ -155,4 +155,5 @@ else:
         ax.scatter(data = data, x = 'Age', y = 'Outcome')
         ax.set_xlabel("Age")
         ax.set_ylabel("Outcome")
+
         st.pyplot(fig)
