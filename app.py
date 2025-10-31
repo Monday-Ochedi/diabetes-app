@@ -14,7 +14,7 @@ st.set_page_config(page_title="Diabetes App", page_icon="🩺", layout = "wide")
 model = joblib.load('Logistic Regression.pkl')
 
 # Load Dataset
-data = pd.read_csv(r"C:\Users\user\Documents\DATA ANALYTICS\MERISKILL\Project 2 - Diabetes Data\diabetes.csv")
+data = pd.read_csv('diabetes.csv')
 
 # Function to make predictions
 def make_prediction(input_data):
@@ -157,3 +157,4 @@ else:
         ax.set_ylabel("Outcome")
 
         st.pyplot(fig)
+
