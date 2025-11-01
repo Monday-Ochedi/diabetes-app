@@ -41,7 +41,7 @@ Early detection of diabetes is essential because:
 
 ## Dataset
 The dataset used for training is the Pima Indians Diabetes Dataset, which contains diagnostic measurements of women aged 21 years and older of Pima Indian heritage.
-Source: [here](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
+- Source: [here](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
 
 ## ⚠️Disclaimer
 This app is intended for educational and research purposes only.
