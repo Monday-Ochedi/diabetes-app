@@ -1,6 +1,6 @@
 # Diabetes Prediction System 🩺 
 
-Description of the app ...
+This Diabetes Prediction App is a machine learning web application built with Streamlit that predicts the likelihood of diabetes based on user input parameters such as glucose level, BMI, age, and other clinical features. The prediction model is trained using the Pima Indians Diabetes Dataset, a well-known dataset from the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK).
 
 ## App
 
