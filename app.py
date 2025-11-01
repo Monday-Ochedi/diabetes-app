@@ -88,22 +88,27 @@ if page == "Prediction":
 
     # Prediction button
     if st.button("**Make Prediction**"):
-        if not all(user_input):
+        if any(x.strip() == "" for x in user_input):
             st.warning("Please fill in all fields before making a prediction.")
         else:
+            try:
             # Convert text inputs to numeric values
             user_input = [float(x) for x in user_input]
 
-        # Make prediction
-        prediction = make_prediction(user_input)
-        
-        # Display prediction result
-        if prediction == 1:
-            st.success("POSITIVE")
-        else:
-            st.success("NEGATIVE")
+            # Make prediction
+            prediction = make_prediction(user_input)
+            
+            # Display prediction result
+            if prediction == 1:    
+                st.success("POSITIVE")
+            else:
+                st.success("NEGATIVE")
 
-
+        except ValueError:
+            st.error("Please enter valid numeric values only.")
+        except Exception as e:
+            st.error("Something went wrong while making the prediction. Please check your inputs.")
+            
 
 # DATA PAGE
 elif page == "Data":
@@ -157,4 +162,5 @@ else:
         ax.set_ylabel("Outcome")
 
         st.pyplot(fig)
+
 
